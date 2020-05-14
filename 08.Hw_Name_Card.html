@@ -37,7 +37,7 @@
       height: 90%;
     }
 
-    .name-card {
+    #name-card {
       width: 90%;
       margin: auto;
       position: absolute;
@@ -46,9 +46,8 @@
       transform: translate(-50%, -50%);
     }
 
-
     #sign {
-      /* background: #ffa; */
+      background: #fff;
     }
 
     #content {
@@ -80,22 +79,35 @@
       left: 7%;
     }
 
-    @media (min-width: 576px) {
-      .name-card {
+    @media (min-width: 540px) {
+      #name-card {
         max-width: 75%;
         max-height: 75%;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        background-image: linear-gradient(to bottom, white 30%, rgb(104, 231, 231) 30%, rgb(104, 231, 231) 100%);
       }
+
+      #sign {
+        background: transparent;
+      }
+
+      #content {
+        background: transparent;
+      }
+
     }
   </style>
 </head>
 
 <body>
-  <div class="name-card h-100 shadow">
+  <div id="name-card" class="h-100 shadow">
+    <!-- sign -->
     <div id="sign" class="h-30"></div>
+
+    <!-- 內容 -->
     <div id="content" class="h-70 position-relative">
       <!-- 名稱 -->
       <div id="nameF" class="position-absolute">
@@ -103,7 +115,6 @@
         <h1 id="name" class="my-n3">Alfred Rain</h1>
         <p id="studio" class="mt-2"> Rain Design Studio</p>
       </div>
-
       <!-- 聯絡資訊 -->
       <div id="informationF" class="position-absolute">
         <span>Website：</span><br>
