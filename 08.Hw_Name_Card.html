@@ -55,7 +55,7 @@
       background: rgb(104, 231, 231);
     }
 
-    #name {
+    #nameF {
       left: 7%;
       top: 26%;
     }
@@ -67,6 +67,17 @@
 
     #name {
       font-size: 3.5rem;
+    }
+
+    #studio {
+      font-weight: 700;
+      /* text-shadow: 7rem 3rem 0.1rem #3f454b; */
+      text-shadow: 5rem 5rem 0px rgba(0, 0, 0, 0.2);
+    }
+
+    #informationF {
+      bottom: 12%;
+      left: 7%;
     }
 
     @media (min-width: 576px) {
@@ -86,9 +97,19 @@
   <div class="name-card h-100 shadow">
     <div id="sign" class="h-30"></div>
     <div id="content" class="h-70 position-relative">
-      <div id="name" class="position-absolute">
+      <!-- 名稱 -->
+      <div id="nameF" class="position-absolute">
         <p id="title">Front-end Designer</p>
-        <h1 id="name" class="my-n3">Alfred Dai</h1>
+        <h1 id="name" class="my-n3">Alfred Rain</h1>
+        <p id="studio" class="mt-2"> Rain Design Studio</p>
+      </div>
+
+      <!-- 聯絡資訊 -->
+      <div id="informationF" class="position-absolute">
+        <span>Website：</span><br>
+        <span>Phone Number：</span><br>
+        <span>Address：</span><br>
+        <span>E-mail：</span><br>
       </div>
 
     </div>
