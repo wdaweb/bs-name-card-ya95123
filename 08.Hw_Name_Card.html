@@ -23,6 +23,7 @@
     body {
       width: 100vw;
       height: 100vh;
+      overflow: hidden;
     }
 
     .h-30 {
@@ -79,6 +80,10 @@
       text-shadow: 5rem 5rem 0 rgba(0, 0, 0, 0.2);
     }
 
+    .space {
+      display: none;
+    }
+
 
     @media (min-width: 768px) {
       #name-card {
@@ -90,6 +95,20 @@
         transform: translate(-50%, -50%);
         background-image: linear-gradient(to bottom, white 30%, rgb(104, 231, 231) 30%, rgb(104, 231, 231) 100%);
       }
+
+      /* #name-card::before {
+        content: '';
+        display: block;
+        width: 100vmin;
+        height: 100vmin;
+        position: absolute;
+        left: -75vmin;
+        bottom: -75vmin;
+        background-color: #fff;
+        box-shadow: 0 0 1.2vmin #ccc;
+        background-image: linear-gradient(to bottom, #ccc 0%, #999 0.3%, #fff 0.3%);
+        transform: rotate(45deg);
+      } */
 
       #sign {
         background: transparent;
@@ -112,11 +131,21 @@
         margin-left: 35%;
         bottom: 16%;
       }
+
+      /* .space {
+        display: block;
+        width: calc(12.5% / 2);
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+      } */
     }
   </style>
 </head>
 
 <body>
+  <div class="space"></div>
   <div id="name-card" class="h-100 shadow">
     <!-- sign -->
     <div id="sign" class="h-30"></div>
