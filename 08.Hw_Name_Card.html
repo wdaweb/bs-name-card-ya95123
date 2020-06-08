@@ -49,7 +49,17 @@
 
     #sign {
       background: #fff;
+      position: relative;
+      display: flex;
+      justify-content: center;
     }
+
+    #logo {
+      width: 350px;
+      position: absolute;
+      z-index: 2;
+    }
+
 
     #content {
       background: rgb(104, 231, 231);
@@ -112,6 +122,15 @@
 
       #sign {
         background: transparent;
+        display: flex;
+      }
+
+      #logo {
+        width: 460px;
+        position: absolute;
+        top: 34%;
+        left: 3%;
+        z-index: 2;
       }
 
       #content {
@@ -124,12 +143,12 @@
 
       #nameF {
         margin-left: 35%;
-        top: 18%;
+        top: 12.2%;
       }
 
       #informationF {
         margin-left: 35%;
-        bottom: 16%;
+        bottom: 23.6%;
       }
 
       /* .space {
@@ -149,7 +168,7 @@
   <div id="name-card" class="h-100 shadow">
     <!-- sign -->
     <div id="sign" class="h-30">
-      <img src="./LOGO_Studio-01.png">
+      <img id="logo" src="./images/LOGO_Studio.png">
     </div>
 
     <!-- 內容 -->
